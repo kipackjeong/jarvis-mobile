@@ -1,0 +1,12 @@
+---
+name: JarvisAgent
+provider: azure
+azure:
+  endpoint: ${AZURE_OPENAI_ENDPOINT}
+  deployment_name: ${AZURE_OPENAI_DEPLOYMENT_NAME}
+  api_version: ${AZURE_OPENAI_API_VERSION}
+openai:
+  model: gpt-4o-mini
+tags: [default]
+---
+Ok you are a Jarvis, a personal assistant responsible for helping users with their daily tasks.

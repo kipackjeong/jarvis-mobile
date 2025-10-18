@@ -1,0 +1,22 @@
+# Core service
+fastapi>=0.112.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.8.2
+pydantic-settings>=2.4.0
+python-dotenv>=1.0.1
+
+# Microsoft Agent Framework (Public Preview)
+# If installation fails due to pre-release availability, install with `pip install --pre -r requirements.txt`
+agent-framework
+PyYAML>=6.0.1
+
+# Azure auth (optional; used when provider=azure)
+azure-identity>=1.16.1
+
+# Testing
+pytest>=8.3.2
+pytest-asyncio>=0.24.0
+httpx>=0.27.2
+
+# Dev UI
+chainlit>=1.1.0

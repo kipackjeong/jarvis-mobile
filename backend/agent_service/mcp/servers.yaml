@@ -1,0 +1,14 @@
+# Example MCP servers configuration
+# Fill in values or use environment variables like ${MCP_SSE_URL}
+servers:
+  - name: example-stdio
+    mode: stdio
+    command: ["node", "dist/server.js"]
+    env:
+      EXTERNAL_API_BASE: ${EXTERNAL_API_BASE}
+
+  - name: example-sse
+    mode: sse
+    url: ${MCP_SSE_URL}
+    headers:
+      Authorization: Bearer ${MCP_SSE_TOKEN}
